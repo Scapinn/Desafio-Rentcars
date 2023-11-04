@@ -1,0 +1,24 @@
+{
+    "development": {
+      "username": "root",
+      "password": "ANSKk08aPEDbFjDO ",
+      "database": "desafio_rentcars",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "password": "ANSKk08aPEDbFjDO",
+      "database": "desafio_rentcars",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "root",
+      "password": "ANSKk08aPEDbFjDO",
+      "database": "desafio_rentcars",
+      "host": "localhost",
+      "dialect": "mysql"
+    }
+  }
+  

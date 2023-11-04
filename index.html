@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Rentcars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD de Veículos</h1>
+        <h2> Registre um  Veículo</h2>
+        <!-- Formulário para registrar um novo veículo -->
+        <form id="registroForm">
+            <label for="locadora">Locadora:</label>
+            <input type="text" id="locadora" required><br>
+            
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" required><br>
+            
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" required><br>
+            
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" required><br>
+            
+            <label for="motor">Motor:</label>
+            <input type="text" id="motor" required><br>
+            
+            <label for="portas">Portas:</label>
+            <input type="number" id="portas" required><br>
+            
+            <label for="cambio">Câmbio:</label>
+            <input type="text" id="cambio" required><br>
+            
+            <label for="ar_condicionado">Ar Condicionado:</label>
+            <select id="ar_condicionado" required>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select><br>
+
+            <button onclick="salvarCarro()">Registrar Carro</button>
+        </form>
+        <!-- Botão para mostrar a lista de carros -->
+        <button onclick="mostrarCarros()">Mostrar Carros</button>
+    </div>
+
+    <!-- Container para exibir os carros -->
+    <div id="carrosContainer">
+        <!-- Aqui serão exibidos os carros -->
+    </div>
+
+    <!-- Formulário de edição (inicialmente oculto) -->
+    <div id="edicaoForm" style="display: none;">
+        <h2>Editar Veículo</h2>
+        <!-- Formulário para editar um veículo -->
+        <form id="edicaoFormulario">
+            <input type="hidden" id="carroId" name="id">
+            <label for="locadoraEditar">Locadora:</label>
+            <input type="text" id="locadoraEditar" required><br>
+                
+            <label for="modeloEditar">Modelo:</label>
+            <input type="text" id="modeloEditar" required><br>
+                
+            <label for="marcaEditar">Marca:</label>
+            <input type="text" id="marcaEditar" required><br>
+                
+            <label for="anoEditar">Ano:</label>
+            <input type="number" id="anoEditar" required><br>
+                
+            <label for="motorEditar">Motor:</label>
+            <input type="text" id="motorEditar" required><br>
+                
+            <label for="portasEditar">Portas:</label>
+            <input type="number" id="portasEditar" required><br>
+                
+            <label for="cambioEditar">Câmbio:</label>
+            <input type="text" id="cambioEditar" required><br>
+                
+            <label for="ar_condicionadoEditar">Ar Condicionado:</label>
+            <select id="ar_condicionadoEditar" required>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select><br>
+    
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
